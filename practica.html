@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio práctico UT02 - Calculadora IMC</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <h1> <img src="http://www.formacioncip.com/wp-content/uploads/2015/07/ciplogo.png" alt="" width="5%" />
+        &nbsp; Ejercicio práctico UT02 - Calculadora IMC</h1>
+    <h3 id="mensaje_imc"></h3>
+    <h3 id="mensaje_imc2"></h3>
+    <br>
+    <div class="group">
+        <center>
+
+            <h2>Calculadora IMC</h2>
+
+            <label for="altura">Escribe tu ALTURA actual (en cm): <span><em>(requerido)</em></span></label>
+            <input type="text" id="altura" name="altura" class="form-input" required />
+
+            <label for="masa">Escribe tu PESO actual (en kg): <span><em>(requerido)</em></span></label>
+            <input type="text" id="masa" name="masa" class="form-input" />
+
+            <label for="imc">Índice de Masa Corporal:</label>
+            <input type="text" id="IMC" name="IMC" class="form-input" required />
+
+            <label for="tipo_imc">Atendiendo al IMC, tiene:</label>
+            <input type="text" id="tipo_imc" name="tipo_imc" class="form-input" required />
+
+            <input class="form-btn" name="submit" type="submit" value="Calcular" onclick="calcular_imc();return true" />
+            </p>
+
+        </center>
+        </form>
+
+    </div>
+
+    </p>
+    </p>
+    </p>
+
+    <div class="group2">
+        <h4>Clasificación de la Organización mundial de la salud:</h4>
+        <table style="height: 100%; width: 100%;" border="0">
+            <tbody>
+                <tr align="center">
+                    <td>
+                        <table style="height: 165px; border-color:#CECECE;" bgcolor="#FFFFFF" border="1" rules="all"
+                            width="100%">
+                            <tbody>
+                                <tr style="text-align: center;">
+                                    <th style="text-align: center; color:#576C9A;font-size:11px;" width="40%" scope="col">ÍNDICE
+                                        MASA CORPORAL</th>
+                                    <th style="text-align: center; color:#576C9A;font-size:11px;" width="60%" scope="col">CLASIFICACIÓN
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="text-align: center;font-size:14px;">&lt;16.00<br>16.00 - 16.99<br>17.00
+                                            -
+                                            18.49<br>18.50 - 24.99<br>25.00 - 29.99<br>30.00 - 34.99<br>35.00 -
+                                            40.00<br>&gt;40.00</div>
+                                    </td>
+                                    <td>
+                                        <div style="text-align: center;font-size:14px;">Infrapeso: Delgadez Severa<br>Infrapeso:
+                                            Delgadez moderada<br>Infrapeso: Delgadez aceptable<br>Peso Normal<br>Sobrepeso<br>Obeso:
+                                            Tipo I<br>Obeso: Tipo II<br>Obeso: Tipo III</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src=cal_imc.js></script>
+
+</body>
+<footer>
+    <center>
+        <div id="footer">
+            <p><em>by javi2gar</em> 2018-2019</p>
+        </div>
+    </center>
+</footer>
+
+</html>
