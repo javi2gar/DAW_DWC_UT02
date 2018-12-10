@@ -56,5 +56,5 @@ function calcular_imc() {
     document.getElementById("IMC").value = imc.toFixed(2);
     document.getElementById("tipo_imc").value = tipo;
     document.getElementById("mensaje_imc").innerHTML = "El valor calculado es: " + imc.toFixed(2);
-    document.getElementById("mensaje_imc2").innerHTML = "Se trata de un: " + tipo;
+    document.getElementById("mensaje_imc2").innerHTML = "Según la \"OMS\" -> " + tipo;
 }
